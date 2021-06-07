@@ -21,8 +21,8 @@ io.on('connection', (socket) => {
 	});
 });
 
-app.post('/post', (req, res) => {
-	res.redirect('/');
+app.get('/', (req, res) => {
+	res.json('hello');
 });
 
 server.listen(port, () => {
