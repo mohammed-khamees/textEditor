@@ -2,7 +2,6 @@ const express = require('express');
 const http = require('http');
 const socket = require('socket.io');
 const app = express();
-const port = 3030;
 
 const server = http.createServer(app);
 const io = socket(server);
@@ -25,6 +24,6 @@ app.get('/', (req, res) => {
 	res.json('hello');
 });
 
-server.listen(port, () => {
-	console.log(`Heared from ${port}`);
+server.listen(5500, () => {
+	console.log(`Heared from ${5500}`);
 });
